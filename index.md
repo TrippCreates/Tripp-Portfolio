@@ -9,8 +9,8 @@ Hi, I'm Gerald Thomas, but most people just call me Tripp. I'm a passionate make
 ## [RC Foam Airplane](./plane.md)
 **TLDR:** This plane was one of my first large-scale projects. It took me months to get right, but it introduced me to the engineering experience, and I fell in love. I came up with the design on my own, integrating foam board with some RC parts, and after many iterations, I got it to fly. It was incredibly exciting for me, and even more so for my father, who filmed all my attempts. 
 
-## [Custom RC Car with Robotic Claw](./car.md)
-**TLDR:** I built this car at a local program over the Summer, the claw itself was not too bad, but creating the car was very hard as I had limited part options, and then integrating the two posed the largest challenge. However, I loved the experience and program so much that I landed a paid internship at the company the following Summer. 
+## [Feed System for Rocket Project at UCLA](./feedsystem.md)
+**TLDR:** I led the implementation of the nitrous feed system for a hybrid rocket that reached an apogee of over 13,000 feet and speeds close to mach one. Through design in Solidworks CAD & Autodesk CAM, analysis in Ansys Mechanical, and testing with hydrostats and waterflows, I was able to create a system that worked within the needed parameters. 
 
 ## [3D Printed Model Rocket](./rocket.md)
 **TLDR:** This project was a blast. It was a truly from scratch design. I 3D printed almost every part; if it wasn't 3D printed, it came from some leftover junk in my garage. The only ordered part of the rocket was the engine itself. The creativity and innovation I had to use to make this project a success truly made it one of my most favorite engineering ventures.
