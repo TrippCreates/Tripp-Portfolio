@@ -1,5 +1,5 @@
 # Feed System
-This project was by far my favorite. It had the best end product, and I got to combine so many disciplines. I did a lot of electrical engineering, some mechanical work on the hardware, 3D-printed some custom mounts and did lots of online shopping for parts. The project got me even deeper into the RC world, and it was so modular that I felt like I could do anything and go anywhere with it. 
+Research, design, and analysis. Throughout building the feed system for the hybrid rocket I did it all. I got to work with many new tools, and learn more about what actually makes rockets fly. It was a super fun, super fast design cycle [5 months], and it forced me to have to learn on the spot, and to listen carefully to my mentors and those around me. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
