@@ -8,7 +8,7 @@ Research, design, and analysis. Throughout building the feed system for the hybr
 ## [Back To Homepage](./index.md)
 
 
-![Drone Gif](Files/IMG_3569.jpeg)
+![Rocket Photo](images/IMG_3569.jpeg)
 
 
 # First Milestone
