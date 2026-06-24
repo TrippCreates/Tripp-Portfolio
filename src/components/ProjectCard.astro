@@ -1,0 +1,133 @@
+---
+interface Props {
+  href: string;
+  no: string;
+  title: string;
+  subtitle: string;
+  dates: string;
+  result?: string;
+}
+
+const { href, no, title, subtitle, dates, result } = Astro.props;
+---
+<a class="card" href={href}>
+  <header class="card-head">
+    <span class="card-no">No. {no}</span>
+    <span class="card-open">open <span aria-hidden="true">→</span></span>
+  </header>
+
+  <h3 class="card-title">{title}</h3>
+  <p class="card-sub">{subtitle}</p>
+
+  <dl class="card-meta">
+    <div class="card-row">
+      <dt>Dates</dt>
+      <dd>{dates}</dd>
+    </div>
+    {result && (
+      <div class="card-row">
+        <dt>Result</dt>
+        <dd>{result}</dd>
+      </div>
+    )}
+  </dl>
+</a>
+
+<style>
+  .card {
+    display: block;
+    padding: 1.25rem 1.25rem 1.1rem;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 140ms ease, border-color 140ms ease;
+  }
+
+  .card:hover {
+    border-color: var(--red-pencil);
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+
+  .card:hover .card-open {
+    color: var(--red-pencil);
+  }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule-soft);
+    margin-bottom: 0.85rem;
+  }
+
+  .card-no {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .card-open {
+    transition: color 140ms ease;
+  }
+
+  .card-title {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.35rem;
+    text-transform: uppercase;
+  }
+
+  .card-sub {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--ink-mute);
+    margin: 0 0 0.9rem;
+    max-width: 56ch;
+  }
+
+  .card-meta {
+    margin: 0;
+    padding-top: 0.65rem;
+    border-top: 1px solid var(--rule-soft);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .card-row {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+  }
+
+  .card-row dt {
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.65rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .card-row dd {
+    margin: 0;
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  @media (max-width: 540px) {
+    .card-meta {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

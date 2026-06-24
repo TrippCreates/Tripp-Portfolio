@@ -1,0 +1,214 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const projectHref = (slug: string) => `${base}/projects/${slug}`.replace(/\/+/g, '/');
+
+const projects = [
+  {
+    slug: 'feed-system',
+    no: 'FEED-25-01',
+    title: 'Rocket Feed System',
+    subtitle: 'Nitrous oxide delivery for a hybrid rocket at UCLA. Designed in SolidWorks, analyzed in Ansys, machined in-house, and proven on the test stand before flight.',
+    dates: 'Sep 2024 — Feb 2025',
+    result: '13,000+ ft · ~Mach 1',
+  },
+  {
+    slug: 'rc-plane',
+    no: 'PLN-22-01',
+    title: 'RC Foam Airplane',
+    subtitle: 'A from-scratch foam-board RC plane — design, build, and iteration over many flight attempts until it finally flew.',
+    dates: '2022',
+    result: 'First sustained flight',
+  },
+  {
+    slug: 'model-rocket',
+    no: 'RKT-23-01',
+    title: '3D Printed Model Rocket',
+    subtitle: 'Almost every part 3D printed or pulled from the garage. A full from-scratch rocket designed around a commercial motor.',
+    dates: '2023',
+    result: 'Successful launch',
+  },
+  {
+    slug: 'drone',
+    no: 'DRN-23-01',
+    title: 'Custom FPV Drone',
+    subtitle: 'A custom-built FPV quadcopter — soldering, electronics integration, and an FPV camera system flown via headset.',
+    dates: '2023 — 2024',
+    result: 'Live FPV flight',
+  },
+];
+---
+<BaseLayout title="Tripp Thomas — Aerospace Engineering Portfolio">
+  <section class="intro">
+    <p class="eyebrow">Aerospace · UCLA · Engineering portfolio</p>
+    <h1 class="display">
+      <span class="display-line">Gerald</span>
+      <span class="display-line">"Tripp"</span>
+      <span class="display-line">Thomas</span>
+    </h1>
+    <p class="tagline">
+      I'm an aerospace engineering student at UCLA. I build things that fly — and the systems that make them work. This is a record of what I've designed, machined, tested, and learned from.
+    </p>
+  </section>
+
+  <section class="about">
+    <header class="section-head">
+      <span class="marker">§01</span>
+      <span class="label">About</span>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-text prose">
+        <p>
+          Hi, I'm Gerald Thomas — most people call me Tripp. I'm studying Aerospace Engineering at UCLA, where I lead the feed system on the school's hybrid rocket. My interests run across electronics, programming, 3D printing, and hardware, but the through-line is the same: making things that work.
+        </p>
+        <p>
+          I'm currently looking for internships in aerospace and mechanical engineering. The fastest way to see what I do is to open one of the project drawings below.
+        </p>
+      </div>
+      <figure class="about-photo">
+        <img src={`${base}/images/GithubHeadshot.jpg`} alt="Portrait of Tripp Thomas" />
+        <figcaption>Tripp Thomas · UCLA</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="projects">
+    <header class="section-head">
+      <span class="marker">§02</span>
+      <span class="label">Projects</span>
+    </header>
+
+    <ul class="card-list">
+      {projects.map((p) => (
+        <li>
+          <ProjectCard
+            href={projectHref(p.slug)}
+            no={p.no}
+            title={p.title}
+            subtitle={p.subtitle}
+            dates={p.dates}
+            result={p.result}
+          />
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="contact">
+    <header class="section-head">
+      <span class="marker">§03</span>
+      <span class="label">Contact</span>
+    </header>
+
+    <dl class="contact-list">
+      <div class="contact-row">
+        <dt>Email</dt>
+        <dd><a href="mailto:geraldrtripp@gmail.com">geraldrtripp@gmail.com</a></dd>
+      </div>
+      <div class="contact-row">
+        <dt>LinkedIn</dt>
+        <dd><a href="https://www.linkedin.com/in/tripp-thomas-788238358/" target="_blank" rel="noopener">/in/tripp-thomas-788238358</a></dd>
+      </div>
+      <div class="contact-row">
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/TrippCreates" target="_blank" rel="noopener">/TrippCreates</a></dd>
+      </div>
+    </dl>
+  </section>
+</BaseLayout>
+
+<style>
+  .intro {
+    margin: var(--s-4) 0 var(--s-7);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--s-4);
+    align-items: start;
+  }
+
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-photo {
+    margin: 0;
+  }
+
+  .about-photo img {
+    border: 1px solid var(--rule);
+    width: 100%;
+    height: auto;
+  }
+
+  .about-photo figcaption {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 0.5rem;
+  }
+
+  .card-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-2);
+  }
+
+  .contact-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--rule-soft);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+
+  .contact-row dt {
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+  }
+
+  .contact-row dd {
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .contact-row a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .contact-row a:hover {
+    color: var(--red-pencil);
+  }
+
+  @media (max-width: 640px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-row {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
+  }
+</style>

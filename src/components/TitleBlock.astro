@@ -1,0 +1,83 @@
+---
+interface Field {
+  label: string;
+  value: string;
+}
+
+interface Props {
+  fields: Field[];
+}
+
+const { fields } = Astro.props;
+---
+<aside class="title-block" aria-label="Project specifications">
+  <dl>
+    {fields.map(({ label, value }) => (
+      <div class="row">
+        <dt>{label}</dt>
+        <dd>{value}</dd>
+      </div>
+    ))}
+  </dl>
+</aside>
+
+<style>
+  .title-block {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    margin: 0 0 var(--s-4);
+  }
+
+  dl {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: minmax(120px, 160px) 1fr;
+    align-items: baseline;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--rule-soft);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .row:last-child {
+    border-bottom: none;
+  }
+
+  dt {
+    color: var(--ink-mute);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: 540px) {
+    .row {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+      padding: 0.65rem 0.85rem;
+    }
+
+    dt {
+      font-size: 0.65rem;
+    }
+
+    dd {
+      font-size: 0.8rem;
+    }
+  }
+</style>

@@ -1,0 +1,399 @@
+/* ---------------------------------------------------------
+   DRAFTING TABLE — design tokens
+   --------------------------------------------------------- */
+
+:root {
+  /* Color */
+  --paper: #FCFCFA;
+  --paper-shade: #F4F1EA;
+  --ink: #1A1817;
+  --ink-mute: #7A7670;
+  --ink-faint: #B8B3A8;
+  --rule: #1A1817;
+  --rule-soft: #DDD8CE;
+  --grid: #DDE2E8;
+  --red-pencil: #B5392E;
+
+  /* Type */
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Spacing scale */
+  --s-1: 0.5rem;
+  --s-2: 1rem;
+  --s-3: 1.5rem;
+  --s-4: 2rem;
+  --s-5: 3rem;
+  --s-6: 4rem;
+  --s-7: 6rem;
+
+  /* Layout */
+  --max-w: 880px;
+  --content-pad: 2rem;
+}
+
+/* ---------------------------------------------------------
+   Reset
+   --------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font: inherit; }
+
+/* ---------------------------------------------------------
+   Page base — drafting paper with faint grid
+   --------------------------------------------------------- */
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -1px -1px;
+  background-attachment: fixed;
+}
+
+/* Reduce grid opacity via overlay so it stays faint */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--paper);
+  opacity: 0.78;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ---------------------------------------------------------
+   Page chrome — drawing border + corner header
+   --------------------------------------------------------- */
+
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--s-3) var(--content-pad) var(--s-7);
+  position: relative;
+}
+
+.page-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--s-5);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page-header .brand {
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.page-header .brand .sub {
+  color: var(--ink-mute);
+  font-weight: 400;
+  margin-left: 0.75rem;
+}
+
+.page-header .nav-link {
+  color: var(--ink-mute);
+  text-decoration: none;
+  transition: color 120ms ease;
+}
+
+.page-header .nav-link:hover {
+  color: var(--red-pencil);
+}
+
+/* ---------------------------------------------------------
+   Typography
+   --------------------------------------------------------- */
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 0 var(--s-2);
+}
+
+.display {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(2.75rem, 8vw, 4.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.display .display-line {
+  display: block;
+}
+
+.tagline {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  max-width: 36ch;
+  margin: var(--s-3) 0 0;
+  color: var(--ink);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: var(--s-7) 0 var(--s-3);
+  padding-bottom: var(--s-1);
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-head .marker {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--red-pencil);
+  letter-spacing: 0.05em;
+}
+
+.section-head .label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Prose styling for markdown content inside ProjectLayout */
+.prose {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.prose h1 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: var(--s-6) 0 var(--s-2);
+}
+
+.prose h1:first-child {
+  margin-top: var(--s-3);
+}
+
+.prose h2 {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: var(--s-6) 0 var(--s-2);
+  padding-bottom: var(--s-1);
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: baseline;
+}
+
+.prose h2::before {
+  content: "§";
+  color: var(--red-pencil);
+  margin-right: 0.5rem;
+  font-weight: 400;
+}
+
+.prose h3 {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: var(--s-4) 0 var(--s-1);
+  color: var(--ink);
+}
+
+.prose p {
+  margin: 0 0 var(--s-3);
+  max-width: 70ch;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.prose em {
+  font-style: italic;
+  color: var(--ink-mute);
+}
+
+.prose a {
+  color: var(--red-pencil);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  color: var(--ink);
+}
+
+.prose ul, .prose ol {
+  margin: 0 0 var(--s-3);
+  padding-left: 1.25rem;
+  max-width: 70ch;
+}
+
+.prose li {
+  margin-bottom: var(--s-1);
+}
+
+.prose img {
+  margin: var(--s-3) 0;
+  border: 1px solid var(--rule);
+  width: 100%;
+}
+
+.prose figure {
+  margin: var(--s-3) 0;
+}
+
+.prose figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: var(--s-1);
+}
+
+.prose blockquote {
+  margin: var(--s-3) 0;
+  padding-left: var(--s-2);
+  border-left: 2px solid var(--red-pencil);
+  font-style: italic;
+  color: var(--ink-mute);
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: var(--s-5) 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--s-3) 0;
+  font-size: 0.9rem;
+}
+
+.prose th, .prose td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.prose th {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule);
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--paper-shade);
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--rule-soft);
+}
+
+/* ---------------------------------------------------------
+   Page footer
+   --------------------------------------------------------- */
+
+.page-footer {
+  margin-top: var(--s-7);
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.page-footer a {
+  color: var(--ink-mute);
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  color: var(--red-pencil);
+}
+
+/* ---------------------------------------------------------
+   Focus / accessibility
+   --------------------------------------------------------- */
+
+:focus-visible {
+  outline: 2px solid var(--red-pencil);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  :root {
+    --content-pad: 1.25rem;
+  }
+
+  body {
+    background-size: 32px 32px;
+  }
+
+  .page-header {
+    font-size: 0.7rem;
+  }
+
+  .page-header .brand .sub {
+    display: none;
+  }
+}

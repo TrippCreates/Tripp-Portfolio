@@ -1,0 +1,83 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import TitleBlock from '../components/TitleBlock.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    subtitle?: string;
+    no: string;
+    dates: string;
+    role: string;
+    team?: string;
+    software?: string;
+    result?: string;
+    status?: string;
+    hero?: string;
+    heroAlt?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const heroSrc = frontmatter.hero
+  ? (frontmatter.hero.startsWith('http') ? frontmatter.hero : `${base}${frontmatter.hero}`)
+  : null;
+
+const fields = [
+  { label: 'No.', value: frontmatter.no },
+  { label: 'Project', value: frontmatter.title },
+  { label: 'Dates', value: frontmatter.dates },
+  { label: 'Role', value: frontmatter.role },
+  ...(frontmatter.team ? [{ label: 'Team', value: frontmatter.team }] : []),
+  ...(frontmatter.software ? [{ label: 'Software', value: frontmatter.software }] : []),
+  ...(frontmatter.result ? [{ label: 'Result', value: frontmatter.result }] : []),
+  ...(frontmatter.status ? [{ label: 'Status', value: frontmatter.status }] : []),
+];
+---
+<BaseLayout title={`${frontmatter.title} · Tripp Thomas`} description={frontmatter.subtitle}>
+  <p class="eyebrow">Project · {frontmatter.no}</p>
+
+  <h1 class="display project-display">
+    {frontmatter.title}
+  </h1>
+
+  {frontmatter.subtitle && (
+    <p class="tagline">{frontmatter.subtitle}</p>
+  )}
+
+  <div class="project-meta">
+    <TitleBlock fields={fields} />
+  </div>
+
+  {heroSrc && (
+    <figure class="hero">
+      <img src={heroSrc} alt={frontmatter.heroAlt ?? frontmatter.title} />
+    </figure>
+  )}
+
+  <article class="prose">
+    <slot />
+  </article>
+</BaseLayout>
+
+<style>
+  .project-display {
+    margin-top: var(--s-1);
+    font-size: clamp(2.25rem, 6vw, 3.75rem);
+  }
+
+  .project-meta {
+    margin-top: var(--s-4);
+  }
+
+  .hero {
+    margin: var(--s-4) 0 0;
+  }
+
+  .hero img {
+    border: 1px solid var(--rule);
+    width: 100%;
+    height: auto;
+  }
+</style>
