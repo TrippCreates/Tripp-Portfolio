@@ -19,7 +19,7 @@ heroAlt: Rocket on the launch pad
 
 **My role.** *What you specifically led. What decisions were yours? Who did you work with? What were your responsibilities from kickoff to launch?*
 
-![Team photo or rocket on the pad](/images/REPLACE-team-or-rocket.jpg)
+![Team photo or rocket on the pad](/images/TeamRocket.jpg)
 
 ## Design
 
@@ -39,7 +39,7 @@ heroAlt: Rocket on the launch pad
 
 **Results.** *What the analysis told you. Anything that failed sim and got redesigned. Final factor of safety.*
 
-![Ansys stress plot](/images/REPLACE-ansys-1.jpg)
+![Ansys stress plot](/images/EndcapFEA.jpg)
 
 ## Manufacturing
 
@@ -49,7 +49,7 @@ heroAlt: Rocket on the launch pad
 
 **Challenges.** *Setups, fixturing, anything that broke or had to be remade.*
 
-![Part on the machine](/images/REPLACE-machining-1.jpg)
+![Part on the machine](/images/FeedBracket.jpg)
 
 ## Testing
 
@@ -61,7 +61,7 @@ heroAlt: Rocket on the launch pad
 
 **Challenges.** *Leaks, fittings, sensor calibration — the messy reality of getting clean data.*
 
-![Hydrostatic test setup](/images/REPLACE-hydrostat.jpg)
+![Hydrostatic test setup](/images/Hydrostat.jpg)
 
 ## Launch
 
@@ -71,7 +71,7 @@ heroAlt: Rocket on the launch pad
 
 **Reflection.** *What it felt like to see it work. What you'd do differently.*
 
-![Launch photo](/images/REPLACE-launch.jpg)
+![Launch photo](/images/LiveLaunch.jpg)
 
 ## What I Learned
 
