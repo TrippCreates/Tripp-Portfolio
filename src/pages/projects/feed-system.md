@@ -19,7 +19,7 @@ heroAlt: Rocket on the launch pad
 
 **My role.** *What you specifically led. What decisions were yours? Who did you work with? What were your responsibilities from kickoff to launch?*
 
-![Team photo or rocket on the pad](/images/TeamRocket.jpg)
+![Team photo or rocket on the pad](public/images/TeamRocket.JPG)
 
 ## Design
 
