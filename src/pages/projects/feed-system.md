@@ -9,7 +9,7 @@ team: UCLA Rocket Project
 software: SolidWorks · Autodesk CAM · Ansys Mechanical
 result: 13,000+ ft apogee · ~Mach 1
 status: Launched
-hero: /images/TeamRocket.jpg
+hero: /images/TeamRocket.JPG
 heroAlt: Rocket on the launch pad
 ---
 
@@ -19,7 +19,7 @@ heroAlt: Rocket on the launch pad
 
 **My role.** *For the feed system I spent a lot of my time on design and analysis. I was completely in charge of creating the CAD for the system, and I built the brackets in CAD, analyzed them with handcalcs, and manufactured them on the CNC. I was also responsible for all the testing [waterfow & hydrostat] and did much of the manual machining on the lathe and mill for the tank and endcaps.*
 
-![Team photo or rocket on the pad](/images/Hotfire.JPG)
+![Team photo or rocket on the pad](/images/Hotfire.jpeg)
 
 ## Design
 
@@ -49,7 +49,7 @@ heroAlt: Rocket on the launch pad
 
 **Challenges.** *Setups, fixturing, anything that broke or had to be remade.*
 
-![Part on the machine](/images/FeedBracket.jpg)
+![Part on the machine](/images/FeedBracket.jpeg)
 
 ## Testing
 
@@ -61,7 +61,7 @@ heroAlt: Rocket on the launch pad
 
 **Challenges.** *Leaks, fittings, sensor calibration — the messy reality of getting clean data.*
 
-![Hydrostatic test setup](/images/Hydrostat.jpg)
+![Hydrostatic test setup](/images/Hydrostat.JPG)
 
 ## Launch
 
