@@ -23,11 +23,11 @@ heroAlt: Rocket on the launch pad
 
 ## Design
 
-*Walk through the design phase in SolidWorks. What were the key components — tank, valves, plumbing, mounts? What constraints did you have to design around: pressure, flow rate, weight, fit inside the airframe?*
+*In SolidWorks it was my job to model the entire system before ordering and putting together parts. I did extensive research on different fitting types to serve different purposes. I became very familiar with McMaster, and I learned how to properly constrain an Assembly. My biggest design restraints were pressure drop within the main propellant line, and fitting the feed system within the body tube diameters. *
 
-**Process.** *How you iterated. Did you sketch first? Reference existing feed systems? Get reviews from mentors?*
+**Process.** *It took around five versions before we had a final design. The process was trying to understand what fitting was needed, finding it on McMaster, and then placing it in the CAD assembly, or building it myself if it was not on McMaster. I would then get the assembly checked either at a design review or with my mentors. More often than not they would find something wrong.*
 
-**Challenges.** *What was hard about the design phase? Where did you get stuck and how did you get unstuck?*
+**Challenges.** *Problems like clocking kept coming up, as NPT fittings are not clockable, but can be more reliable, whereas AN fittings can clock, but will leak more often. So many times I had NPT fittings where we needed AN fittings, but we also had unnecessary AN fittings where the more reliable choice could be used. Spacing was also a constant problem, and having to fit in the brackets for the pneumatic valves made it super hard to get everything to go together correctly.*
 
 ![SolidWorks assembly](/images/REPLACE-cad-1.jpg)
 
