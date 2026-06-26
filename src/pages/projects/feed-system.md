@@ -23,7 +23,7 @@ heroAlt: Rocket on the launch pad
 
 ## Design
 
-*In SolidWorks it was my job to model the entire system before ordering and putting together parts. I did extensive research on different fitting types to serve different purposes. I became very familiar with McMaster, and I learned how to properly constrain an Assembly. My biggest design restraints were pressure drop within the main propellant line, and fitting the feed system within the body tube diameters. *
+*In SolidWorks it was my job to model the entire system before ordering and putting together parts. I did extensive research on different fitting types to serve different purposes. I became very familiar with McMaster, and I learned how to properly constrain an Assembly. My biggest design restraints were pressure drop within the main propellant line, and fitting the feed system within the body tube diameters.*
 
 **Process.** *It took around five versions before we had a final design. The process was trying to understand what fitting was needed, finding it on McMaster, and then placing it in the CAD assembly, or building it myself if it was not on McMaster. I would then get the assembly checked either at a design review or with my mentors. More often than not they would find something wrong.*
 
