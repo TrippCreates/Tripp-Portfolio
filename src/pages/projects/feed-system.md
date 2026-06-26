@@ -3,23 +3,23 @@ layout: ../../layouts/ProjectLayout.astro
 title: Rocket Feed System
 subtitle: Nitrous oxide delivery for a hybrid rocket — designed, analyzed, machined, and tested at UCLA.
 no: FEED-25-01
-dates: Sep 2024 — Feb 2025
+dates: Sep 2025 — May 2026
 role: Feed system lead
 team: UCLA Rocket Project
 software: SolidWorks · Autodesk CAM · Ansys Mechanical
 result: 13,000+ ft apogee · ~Mach 1
 status: Launched
-hero: /images/REPLACE-feedsystem-hero.jpg
+hero: /images/TeamRocket.jpg
 heroAlt: Rocket on the launch pad
 ---
 
 ## Overview
 
-*Write a short passage introducing the rocket and what a feed system actually does. Briefly explain that the feed system delivers nitrous oxide to the combustion chamber of the hybrid motor, why that role matters for performance, and the scale of the project: team size, the 5-month design cycle, and the end goal of reaching 13,000+ ft.*
+*For our hybrid rocket we used HTPB as our solid fuel grain, and nitrous as our liquid oxidizer. For the feed system we were responsible for the tanks, as well as all piping, pneumatics, and valves. This role is key in delivering the nitrous to the solid fuel at the right flow rate and pressure. I was one of two co-leads for the feed system, and we had around five general members that helped throughout on some projects. We were apart of a much larger team, in which around 50 people contributed something to the building of the rocket. *
 
-**My role.** *What you specifically led. What decisions were yours? Who did you work with? What were your responsibilities from kickoff to launch?*
+**My role.** *For the feed system I spent a lot of my time on design and analysis. I was completely in charge of creating the CAD for the system, and I built the brackets in CAD, analyzed them with handcalcs, and manufactured them on the CNC. I was also responsible for all the testing [waterfow & hydrostat] and did much of the manual machining on the lathe and mill for the tank and endcaps.*
 
-![Team photo or rocket on the pad](public/images/TeamRocket.JPG)
+![Team photo or rocket on the pad](public/images/Hotfire.JPG)
 
 ## Design
 
