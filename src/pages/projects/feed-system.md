@@ -15,7 +15,7 @@ heroAlt: Rocket on the launch pad
 
 ## Overview
 
-*For our hybrid rocket we used HTPB as our solid fuel grain, and nitrous as our liquid oxidizer. For the feed system we were responsible for the tanks, as well as all piping, pneumatics, and valves. This role is key in delivering the nitrous to the solid fuel at the right flow rate and pressure. I was one of two co-leads for the feed system, and we had around five general members that helped throughout on some projects. We were apart of a much larger team, in which around 50 people contributed something to the building of the rocket. *
+*For our hybrid rocket we used HTPB as our solid fuel grain, and nitrous as our liquid oxidizer. For the feed system we were responsible for the tanks, as well as all piping, pneumatics, and valves. This role is key in delivering the nitrous to the solid fuel at the right flow rate and pressure. I was one of two co-leads for the feed system, and we had around five general members that helped throughout on some projects. We were apart of a much larger team, in which around 50 people contributed something to the building of the rocket.*
 
 **My role.** *For the feed system I spent a lot of my time on design and analysis. I was completely in charge of creating the CAD for the system, and I built the brackets in CAD, analyzed them with handcalcs, and manufactured them on the CNC. I was also responsible for all the testing [waterfow & hydrostat] and did much of the manual machining on the lathe and mill for the tank and endcaps.*
 
