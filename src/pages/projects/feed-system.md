@@ -9,7 +9,7 @@ team: UCLA Rocket Project
 software: SolidWorks · Autodesk CAM · Ansys Mechanical
 result: 13,000+ ft apogee · ~Mach 1
 status: Launched
-hero: <img src="/Tripp-Portfolio/images/TeamRocket.JPG" alt="Rocket Launch" width="400">
+hero: /images/TeamRocket.JPG
 heroAlt: Rocket on the launch pad
 ---
 
