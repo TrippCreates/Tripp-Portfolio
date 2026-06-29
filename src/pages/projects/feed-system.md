@@ -19,7 +19,7 @@ heroAlt: Rocket on the launch pad
 
 **My role.** *For the feed system I spent a lot of my time on design and analysis. I was completely in charge of creating the CAD for the system, and I built the brackets in CAD, analyzed them with handcalcs, and manufactured them on the CNC. I was also responsible for all the testing [waterfow & hydrostat] and did much of the manual machining on the lathe and mill for the tank and endcaps.*
 
-<img src="/Tripp-Portfolio/images/Hotfire.jpeg" alt="Team with Assembled Propulsion System" width="600">
+<img src="/Tripp-Portfolio/images/Hotfire.jpeg" alt="Team with Assembled Propulsion System" width="500">
 
 ## Design
 
