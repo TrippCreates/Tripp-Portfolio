@@ -274,6 +274,10 @@ body::before {
   margin: var(--s-3) 0;
   border: 1px solid var(--rule);
   width: 100%;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prose figure {
