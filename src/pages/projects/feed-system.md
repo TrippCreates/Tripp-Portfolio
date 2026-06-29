@@ -49,7 +49,7 @@ heroAlt: Rocket on the launch pad
 
 **Challenges.** *Setups, fixturing, anything that broke or had to be remade.*
 
-<img src="/Tripp-Portfolio/images/FeedBracket.jpeg" alt="Manufactured Part" width="100">
+<img src="/Tripp-Portfolio/images/FeedBracket.jpeg" alt="Manufactured Part" width="200">
 
 ## Testing
 
