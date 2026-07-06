@@ -29,17 +29,17 @@ heroAlt: Rocket on the launch pad
 
 **Challenges.** *Problems like clocking kept coming up, as NPT fittings are not clockable, but can be more reliable, whereas AN fittings can clock, but will leak more often. So many times I had NPT fittings where we needed AN fittings, but we also had unnecessary AN fittings where the more reliable choice could be used. Spacing was also a constant problem, and having to fit in the brackets for the pneumatic valves made it super hard to get everything to go together correctly.*
 
-![SolidWorks assembly](/images/REPLACE-cad-1.jpg)
+![SolidWorks assembly](/images/FeedAssembly.png)
 
 ## Analysis
 
-*Why analysis mattered. What you were checking — burst pressure, stress concentrations, factor of safety on pressure-bearing components.*
+*Our first step in analysis was to do conservative hand calcs in which we checked all our failure mode and conditions conservatively. For the brackets which are pictured we did bolt calcs, and we did calcs for a cantilever beam. To confirm our work we then simulated in Ansys the conditions. This was give a more accurate picture of all the stresses. Our factor of safety in this case was 2.0, meaning we tested with twice the maximum expected forces our part was going to see.*
 
-**Method.** *Your Ansys Mechanical workflow. Loads and boundary conditions. What you were trying to prove.*
+**Method.** *In Ansys Mechanical we fixed our brackets, set material to Aluminum, and the set the loads. The loads were two forces of 110psi x the surface area of contact on each beam of the bracket. We were trying to make sure that our beams would not bend and break.*
 
-**Results.** *What the analysis told you. Anything that failed sim and got redesigned. Final factor of safety.*
+**Results.** *The analysis really just confirmed our handcalcs with more accuracy, but in the preliminary stage with said hand calcs we did discover that our initial design would've failed and needed to be made thicker.*
 
-![Ansys stress plot](/images/EndcapFEA.jpg)
+![Ansys stress plot](/images/BracketFEA.png)
 
 ## Manufacturing
 
