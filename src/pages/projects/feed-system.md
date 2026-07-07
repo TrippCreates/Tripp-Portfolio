@@ -43,11 +43,11 @@ heroAlt: Rocket on the launch pad
 
 ## Manufacturing
 
-*How the design became a real, machined part. What you made in-house vs. ordered. Materials.*
+*I CNCd the part on a 3-axis machine from Haas mini mill. We ordered a 3x3 cube of Aluminum 6061, and went from there. Aluminum was chosen for being light, and cheaper.*
 
-**CAM and machining.** *Autodesk CAM specifically — toolpath setup, machines you ran, surface finishes and tolerances that mattered.*
+**CAM and machining.** *I did the CAM setup on Autodesk. For each bracket there was three seperate setups, with two different tools. This made the process a lot harder as I had to think about how I would orient the part for each setup, and it made the CAM setup way more complex.*
 
-**Challenges.** *Setups, fixturing, anything that broke or had to be remade.*
+**Challenges.** *Thankfully nothing broke or had to be remade, but the setups were very hard to get right. I had to think about how the vice grip would hold the part in each setup, and where I would set my xyz zeros. There were also some worrisome moments where I had to machine very slowly because the torque on the part would be very high.*
 
 <img src="/Tripp-Portfolio/images/FeedBracket.jpeg" alt="Manufactured Part" width="200">
 
