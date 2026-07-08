@@ -53,13 +53,13 @@ heroAlt: Rocket on the launch pad
 
 ## Testing
 
-*Why test? What a hydrostatic test proves, what a water flow test proves.*
+*So for our design process, we design, analyze, and then test. Testing for us fully qualifies our part so that it can be put into the final product, in this case the rocket. The hydrostatic test which is pictured presses the tank up to 1.5x MEOP (Maxium Expected Operating Pressure). It proves whether or not our tank will seal and hold pressure. The water flow test qualifies our entire feed system and gives us the true pressure losses and flow rate of the system.*
 
-**Hydrostatic testing.** *Pressure tested to, what you were checking for, results.*
+**Hydrostatic testing.** *We pressurized up to 1.5x MEOP, which ended up being 1125 psi. We were making sure that at that pressure we weren't leaking more than 5psi/min. We were also making sure that our endcaps sealed at ambient pressure. At first our bolt calculation were incorrect, and we ended up bearing our tank. But we remanufactured and added more bolts, and eventually we were able to fully qualify.*
 
-**Water flow testing.** *How you measured flow rate. Whether it matched predicted mass flow. What you adjusted between runs.*
+**Water flow testing.** *We measured flow rate by having a bucked capture all the water between a set period of time. We also calculated the pressure losses by having two pressure gauges, one before the feed system, and one after. Both results ended up being very close to predicted values. We did over 50+ waterflows to qualify different systems, with about 10 trials for each. We then averaged the results of the trials, and had a very low spread in values.*
 
-**Challenges.** *Leaks, fittings, sensor calibration — the messy reality of getting clean data.*
+**Challenges.** *For much of our testing our tank would continue to leak at ambient pressure. We had to reorient out endcaps to different positions, and had to try different o-rings to see what would work. Finally we were able to get it to hold. Many of our fittings that were used for the pump were also leaking, and it would take long stretches of time to try and fix different setups. Our data however, was mostly clean, and came out pretty readable.*
 
 ![Hydrostatic test setup](/images/Hydrostat.JPG)
 
