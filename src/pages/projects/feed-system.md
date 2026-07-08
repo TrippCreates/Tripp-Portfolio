@@ -65,11 +65,11 @@ heroAlt: Rocket on the launch pad
 
 ## Launch
 
-*The payoff. Where it flew, who was there, what happened.*
+*We launched in the Mojave desert at around 12:30pm. We had the whole team there, around 40+ people, and it took around two days of setup to get launch ready.*
 
-**Results.** *Apogee, top speed, recovery. The rocket reached over 13,000 ft and close to Mach 1 — did the feed system perform the way analysis and testing predicted?*
+**Results.** *13,000+ feet, max speeds over mach 1, and a complete successful recovery. Feed system performed as expected which was incredible.*
 
-**Reflection.** *What it felt like to see it work. What you'd do differently.*
+**Reflection.** *This was 100% my most intensive project to date. Seeing it success was a feeling like no other. I think if I were to redo the process I would try to spend more time on hand calculations as our biggest mistake was made there. We costed ourselves around 40 hours of work, and we could of avoided that if we were more diligent with our hand calculations.*
 
 ![Launch photo](/images/LiveLaunch.jpg)
 
