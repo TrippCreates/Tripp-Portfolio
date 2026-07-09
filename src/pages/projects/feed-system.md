@@ -75,7 +75,7 @@ heroAlt: Rocket on the launch pad
 
 ## What I Learned
 
-*SolidWorks CAD, Autodesk CAM, Ansys Mechanical FEA, and a better understanding of the design process were just some of what I got to learn adn work with from this project. Even more important were the standard engineering practices that were required throughout the design cycle. This meant learning to work as a team, handling deadlines, and how to learn from mentors while also being able to teach yourself something. I also got to participate in many design reviews that mimiced what professional industry looked like. It was an exciting time, and I am looking forward to doing it again on the liquid bi-propellant team in my Sophomore year. *
+*SolidWorks CAD, Autodesk CAM, Ansys Mechanical FEA, and a better understanding of the design process were just some of what I got to learn adn work with from this project. Even more important were the standard engineering practices that were required throughout the design cycle. This meant learning to work as a team, handling deadlines, and how to learn from mentors while also being able to teach yourself something. I also got to participate in many design reviews that mimiced what professional industry looked like. It was an exciting time, and I am looking forward to doing it again on the liquid bi-propellant team in my Sophomore year.*
 
 ## Acknowledgments
 
