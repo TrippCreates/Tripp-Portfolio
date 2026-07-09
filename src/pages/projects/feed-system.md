@@ -71,7 +71,7 @@ heroAlt: Rocket on the launch pad
 
 **Reflection.** *This was 100% my most intensive project to date. Seeing it success was a feeling like no other. I think if I were to redo the process I would try to spend more time on hand calculations as our biggest mistake was made there. We costed ourselves around 40 hours of work, and we could of avoided that if we were more diligent with our hand calculations.*
 
-![Launch photo](/images/LiveLaunch.jpg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tq8HeFo8MEM?si=TtL6t8LW8bv7y37-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## What I Learned
 
