@@ -75,8 +75,8 @@ heroAlt: Rocket on the launch pad
 
 ## What I Learned
 
-*A closing passage. What this project taught you — technically (CAD, CAM, FEA, testing methodology) and as an engineer (working with mentors, fast design cycles, learning on the spot). Tie back to the opening line about being forced to learn quickly.*
+*SolidWorks CAD, Autodesk CAM, Ansys Mechanical FEA, and a better understanding of the design process were just some of what I got to learn adn work with from this project. Even more important were the standard engineering practices that were required throughout the design cycle. This meant learning to work as a team, handling deadlines, and how to learn from mentors while also being able to teach yourself something. I also got to participate in many design reviews that mimiced what professional industry looked like. It was an exciting time, and I am looking forward to doing it again on the liquid bi-propellant team in my Sophomore year. *
 
 ## Acknowledgments
 
-*A short paragraph thanking mentors, teammates, and the lab at UCLA. Name names if you'd like.*
+*Thank you to my mentors in Rocket Project, as well as all my peers who worked so hard to see this project through.*
