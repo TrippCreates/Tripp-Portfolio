@@ -9,6 +9,8 @@ team: UCLA Rocket Project · Liquid Bipropellant
 software: SolidWorks · Ansys Mechanical · Python · Autodesk CAM
 result: ~3 kg/s engine · 1.3 O/F
 status: In fabrication
+hero: /images/LiquidFeedAssembly.png
+heroAlt: SolidWorks assembly of the full liquid feed system, from the press bay down to the engine valves
 ---
 
 ## Overview
@@ -17,7 +19,6 @@ After the hybrid rocket launched, I moved over to lead the feed system on our li
 
 We use a 12 L composite overwrapped pressure vessel (COPV) charged with helium to 4,500 psi. A regulator steps that down, and the helium pushes on the LOX and ethanol tanks to drive propellant into the engine. Everything between the COPV and the injector is ours: the pressurant lines, the tanks' inlets, the propellant lines, and the valves and brackets that hold it all together.
 
-<!-- PHOTO: full feed system CAD assembly (SolidWorks) -->
 
 ## Design
 
@@ -25,7 +26,17 @@ I'm modeling the system in SolidWorks, starting from the COPV and working down t
 
 **Rerouting the plumbing.** I rerouted the COPV-to-tank piping to use the space inside the airframe better. This made the feed system 3 inches shorter and cut mass. Shorter plumbing is also less pressure drop. Before committing to it, I checked with hand calcs and Ansys Mechanical that the new routing survives launch loads, and made sure we can still reach every joint for integration and leak checks.
 
-<!-- PHOTO: before/after routing, or the Ansys result for the rerouted piping -->
+**The press bay.** The top of the system is the press bay, where the COPV, regulator, and pressurant manifold live. Everything here has to fit inside the airframe and still leave room for hands and wrenches during integration.
+
+![Press bay CAD: COPV, dome regulator, and pressurant manifold](/images/PressBayCAD.png)
+
+**Press bay bracket analysis.** The manifold bracket carries the press bay hardware and the COPV through launch. In Ansys Mechanical, I modeled the hardware as point masses: 8 lbm for the press bay at the center of the clamp, and 16 lbm for the COPV at its center of mass, 11 inches above the manifold. I then ran the bracket under two load cases. Stress stays low through most of the bracket and concentrates at the bolt hole, so I looked at that region up close in both cases.
+
+![Ansys setup: point masses for the press bay and COPV](/images/PressBayFEASetup.png)
+
+![Von Mises stress, load case C, with bolt-hole close-up](/images/PressBayFEA-C.png)
+
+![Von Mises stress, load case D, with bolt-hole close-up](/images/PressBayFEA-D.png)
 
 ## Analysis
 
@@ -33,7 +44,13 @@ I'm modeling the system in SolidWorks, starting from the COPV and working down t
 
 **LOX boil-off.** Liquid oxygen sits around −183 °C, and we launch in the desert. While the rocket waits on the pad, heat leaks in and the LOX boils. I modeled the boil-off rate in Python for desert conditions and used it to size the vent lines so the tank can vent that gas without over-pressurizing.
 
-<!-- PHOTO/PLOT: COPV pressure-temperature vs. time from the Python model -->
+The plots below come from that model over a 15-second burn. Helium density in the COPV falls from about 42 to 15 kg/m³, and the gas cools from about 285 K to 140 K as it expands. The ullage gas in the LOX and fuel tanks is tracked too.
+
+![Python model: helium density and gas temperatures in the COPV and tank ullages during the burn](/images/COPVBlowdown.png)
+
+**Pressure ladder.** To check the plumbing, I tally every pressure drop from the COPV to the tank at the end of the burn, when the COPV is at its weakest. Each fitting uses ΔP = K·½ρv², straight pipe uses Darcy-Weisbach, and the check valve uses its Cv. On the LOX side, the COPV is down to 668 psi at burnout, the dome regulator steps it down to 535 psi, and the tank still sees 505.3 psi. That's 57.75 psi of line losses on top of the regulator drop. The ladder shows which fittings cost the most. The tees and manifolds are the biggest offenders, so they're the first things to look at when cutting losses.
+
+![LOX pressure ladder: line losses from COPV to tank at end of burn](/images/LOXPressLadder.png)
 
 ## Helium Diffusers
 
