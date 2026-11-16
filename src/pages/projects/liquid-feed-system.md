@@ -48,7 +48,7 @@ The plots below come from that model over a 15-second burn. Helium density in th
 
 ![Python model: helium density and gas temperatures in the COPV and tank ullages during the burn](/images/COPVBlowdown.png)
 
-**Pressure ladder.** To check the plumbing, I tally every pressure drop from the COPV to the tank at the end of the burn, when the COPV is at its weakest. Each fitting uses ΔP = K·½ρv², straight pipe uses Darcy-Weisbach, and the check valve uses its Cv. On the LOX side, the COPV is down to 668 psi at burnout, the dome regulator steps it down to 535 psi, and the tank still sees 505.3 psi. That's 57.75 psi of line losses on top of the regulator drop. The ladder shows which fittings cost the most. The tees and manifolds are the biggest offenders, so they're the first things to look at when cutting losses.
+**Pressure ladder.** To check the plumbing, I tally every pressure drop from the COPV to the tank at the end of the burn, when the COPV is at its weakest. Each fitting uses ΔP = K·½ρv², straight pipe uses Darcy-Weisbach, and the check valve uses its Cv. On the LOX side, the COPV is down to 668 psi at burnout, the dome regulator steps it down to 600 psi, and the tank still sees 570.3 psi. That's 57.75 psi of line losses on top of the regulator drop. The ladder shows which fittings cost the most. The tees and manifolds are the biggest offenders, so they're the first things to look at when cutting losses.
 
 ![LOX pressure ladder: line losses from COPV to tank at end of burn](/images/LOXPressLadder.png)
 
