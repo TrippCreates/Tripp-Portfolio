@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
-title: Rocket Feed System
+title: Hybrid Rocket Feed System
 subtitle: Nitrous oxide delivery for a hybrid rocket — designed, analyzed, machined, and tested at UCLA.
 no: FEED-25-01
-dates: Sep 2025 — May 2026
+dates: Sep 2025 — Jun 2026
 role: Feed system lead
 team: UCLA Rocket Project
 software: SolidWorks · Autodesk CAM · Ansys Mechanical
-result: 13,000+ ft apogee · ~Mach 1
+result: 5 static hot fires · 13,000+ ft apogee · ~Mach 1
 status: Launched
 hero: /images/TeamRocket.JPG
 heroAlt: Rocket on the launch pad
@@ -15,9 +15,11 @@ heroAlt: Rocket on the launch pad
 
 ## Overview
 
-*For our hybrid rocket we used HTPB as our solid fuel grain, and nitrous as our liquid oxidizer. For the feed system we were responsible for the tanks, as well as all piping, pneumatics, and valves. This role is key in delivering the nitrous to the solid fuel at the right flow rate and pressure. I was one of two co-leads for the feed system, and we had around five general members that helped throughout on some projects. We were apart of a much larger team, in which around 50 people contributed something to the building of the rocket.*
+*For our hybrid rocket we used HTPB as our solid fuel grain, and nitrous as our liquid oxidizer. For the feed system we were responsible for the tanks, as well as all piping, pneumatics, and valves. This role is key in delivering the nitrous to the solid fuel at the right flow rate and pressure. I was one of two co-leads for the feed system, and I coordinated 12 engineers through design reviews, documentation, and integration with the other subteams. We were apart of a much larger team, in which around 50 people contributed something to the building of the rocket.*
 
 **My role.** *For the feed system I spent a lot of my time on design and analysis. I was completely in charge of creating the CAD for the system, and I built the brackets in CAD, analyzed them with handcalcs, and manufactured them on the CNC. I was also responsible for all the testing [waterfow & hydrostat] and did much of the manual machining on the lathe and mill for the tank and endcaps.*
+
+**Qualification.** *Before flight, the propulsion system qualified through 5 static hot fires on the test stand.*
 
 <img src="/Tripp-Portfolio/images/Hotfire.jpeg" alt="Team with Assembled Propulsion System" width="500">
 
