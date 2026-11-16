@@ -30,13 +30,13 @@ I'm modeling the system in SolidWorks, starting from the COPV and working down t
 
 ![Press bay CAD: COPV, dome regulator, and pressurant manifold](/images/PressBayCAD.png)
 
-**Press bay bracket analysis.** The manifold bracket carries the press bay hardware and the COPV through launch. In Ansys Mechanical, I modeled the hardware as point masses: 8 lbm for the press bay at the center of the clamp, and 16 lbm for the COPV at its center of mass, 11 inches above the manifold. I then ran the bracket under two load cases. Stress stays low through most of the bracket and concentrates at the bolt hole, so I looked at that region up close in both cases.
+**Press bay bracket analysis.** The manifold bracket carries the press bay hardware and the COPV through launch. In Ansys Mechanical, I modeled the hardware as point masses: 8 lbm for the press bay at the center of the clamp, and 16 lbm for the COPV at its center of mass, 11 inches above the manifold. I then ran the bracket under two load cases: recovery and launch. Recovery produced the higher peak stresses. In both cases, stress stays low through most of the bracket and concentrates at the bolt hole, so I looked at that region up close.
 
 ![Ansys setup: point masses for the press bay and COPV](/images/PressBayFEASetup.png)
 
-![Von Mises stress, load case C, with bolt-hole close-up](/images/PressBayFEA-C.png)
+![Von Mises stress, recovery load case, with bolt-hole close-up](/images/PressBayFEA-C.png)
 
-![Von Mises stress, load case D, with bolt-hole close-up](/images/PressBayFEA-D.png)
+![Von Mises stress, launch load case, with bolt-hole close-up](/images/PressBayFEA-D.png)
 
 ## Analysis
 
@@ -56,9 +56,9 @@ The plots below come from that model over a 15-second burn. Helium density in th
 
 When pressurant enters a propellant tank fast, it can jet into the liquid and mix gas into it. If that gas gets pulled down the feed line, it can starve the engine and cause a flameout. The fix is a diffuser at each tank inlet that spreads out and slows the incoming helium so it settles on top of the liquid instead of punching into it.
 
-I designed the diffusers for both the LOX and ethanol tanks and machined three of them by hand on the lathe and rotary mill.
+I designed the diffusers for both the LOX and ethanol tanks: a tube with rows of radial holes that turn the incoming helium sideways and spread it out. I machined three of them by hand on the lathe and rotary mill.
 
-<!-- PHOTO: machined diffusers -->
+<img src="/Tripp-Portfolio/images/HeliumDiffuser.jpg" alt="Hand-machined helium diffuser" width="420">
 
 ## Fabrication and Test Plan
 
