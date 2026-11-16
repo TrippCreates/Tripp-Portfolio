@@ -24,8 +24,6 @@ We use a 12 L composite overwrapped pressure vessel (COPV) charged with helium t
 
 I'm modeling the system in SolidWorks, starting from the COPV and working down to the injector. The main thing driving the design is pressure loss: every fitting, bend, and valve between the COPV and the injector costs pressure, and the engine needs a set inlet pressure to hit its flow rate. I check each line with Darcy-Weisbach hand calcs for friction and minor losses, and run choked-flow checks on the pressurant side to make sure no restriction limits how fast helium can reach the tanks.
 
-**Rerouting the plumbing.** I rerouted the COPV-to-tank piping to use the space inside the airframe better. This made the feed system 3 inches shorter and cut mass. Shorter plumbing is also less pressure drop. Before committing to it, I checked with hand calcs and Ansys Mechanical that the new routing survives launch loads, and made sure we can still reach every joint for integration and leak checks.
-
 **The press bay.** The top of the system is the press bay, where the COPV, regulator, and pressurant manifold live. Everything here has to fit inside the airframe and still leave room for hands and wrenches during integration.
 
 ![Press bay CAD: COPV, dome regulator, and pressurant manifold](/images/PressBayCAD.png)
@@ -42,8 +40,6 @@ I'm modeling the system in SolidWorks, starting from the COPV and working down t
 
 **COPV blowdown model.** As helium leaves the COPV, its pressure, temperature, and density all drop. I wrote a Python model that tracks those three upstream of the regulator over the whole burn. It answers the question that sizes the bottle: is there still enough pressure and helium left at the end of the burn to keep the regulator delivering the mass and volume flow the tanks need?
 
-**LOX boil-off.** Liquid oxygen sits around −183 °C, and we launch in the desert. While the rocket waits on the pad, heat leaks in and the LOX boils. I modeled the boil-off rate in Python for desert conditions and used it to size the vent lines so the tank can vent that gas without over-pressurizing.
-
 The plots below come from that model over a 15-second burn. Helium density in the COPV falls from about 42 to 15 kg/m³, and the gas cools from about 285 K to 140 K as it expands. The ullage gas in the LOX and fuel tanks is tracked too.
 
 ![Python model: helium density and gas temperatures in the COPV and tank ullages during the burn](/images/COPVBlowdown.png)
@@ -58,6 +54,8 @@ When pressurant enters a propellant tank fast, it can jet into the liquid and mi
 
 I designed the diffusers for both the LOX and ethanol tanks: a tube with rows of radial holes that turn the incoming helium sideways and spread it out. I machined three of them by hand on the lathe and rotary mill.
 
+![Diffuser in CAD: the perforated tube hangs below the pressurant inlet at the top of the tank](/images/DiffuserCAD.png)
+
 <img src="/Tripp-Portfolio/images/HeliumDiffuser.jpg" alt="Hand-machined helium diffuser" width="420">
 
 ## Fabrication and Test Plan
@@ -66,10 +64,9 @@ We're now preparing the system for fabrication and qualification. I'm hand-bendi
 
 The test campaign builds up one step at a time, the same way we qualified the hybrid:
 
-1. **Hydrostatic tests:** pressurize tanks and lines with water to prove they hold pressure and don't leak.
-2. **Water flows:** measure real flow rates and pressure losses and compare them to the hand calcs.
-3. **Cold flows:** flow the full system without ignition to check pressurization and valve sequencing.
-4. **Hot fires:** fire the full engine on the test stand.
+1. **Water flows:** measure real flow rates and pressure losses and compare them to the hand calcs.
+2. **Cold flows:** flow the full system without ignition to check pressurization and valve sequencing.
+3. **Hot fires:** fire the full engine on the test stand.
 
 <!-- PHOTO: bent tubing / CNC brackets / test stand -->
 
