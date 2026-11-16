@@ -7,11 +7,19 @@ const projectHref = (slug: string) => `${base}/projects/${slug}`.replace(/\/+/g,
 
 const projects = [
   {
+    slug: 'liquid-feed-system',
+    no: 'FEED-26-02',
+    title: 'Liquid Bipropellant Feed System',
+    subtitle: 'Helium-pressurized LOX/ethanol feed system for a ~3 kg/s, 1.3 O/F engine. COPV blowdown and LOX boil-off modeled in Python, plumbing designed in SolidWorks, diffusers machined by hand.',
+    dates: 'Jul 2026 — Present',
+    result: 'In fabrication',
+  },
+  {
     slug: 'feed-system',
     no: 'FEED-25-01',
-    title: 'Rocket Feed System',
-    subtitle: 'Nitrous oxide delivery for a hybrid rocket at UCLA. Designed in SolidWorks, analyzed in Ansys, machined in-house, and proven on the test stand before flight.',
-    dates: 'Sep 2025 — May 2026',
+    title: 'Hybrid Rocket Feed System',
+    subtitle: 'Nitrous oxide delivery for a hybrid rocket at UCLA. Designed in SolidWorks, analyzed in Ansys, machined in-house, and qualified through 5 static hot fires before flight.',
+    dates: 'Sep 2025 — Jun 2026',
     result: '13,000+ ft · ~Mach 1',
   },
   {
@@ -61,7 +69,16 @@ const projects = [
     <div class="about-grid">
       <div class="about-text prose">
         <p>
-          Hi, I'm Tripp Thomas. I'm studying Aerospace Engineering at UCLA, where I lead the feed system on the school's rocketry team. My interests run across electronics, programming, 3D printing, and hardware, but the through-line is the same: making things that work.
+          Hi, I'm Tripp Thomas. I'm studying Aerospace Engineering at UCLA (class of 2029, 3.8 GPA). On UCLA Rocket Project I lead the feed system for our liquid bipropellant rocket, a helium-pressurized LOX/ethanol system. Before that, I led feed systems on our hybrid rocket, which qualified through 5 static hot fires and flew to 13,000+ feet.
+        </p>
+        <p>
+          Outside the team, I'm a project instructor at BlueStamp Engineering, where I mentor high school students through their own engineering builds, and a paid student ambassador with UCLA Engineering Ambassadors. My interests run across electronics, programming, 3D printing, and hardware, but the through-line is the same: making things that work.
+        </p>
+        <p class="about-avail">
+          Available for internships Summer 2027 &amp; Fall 2027 · U.S. Citizen
+        </p>
+        <p>
+          <a class="resume-link" href={`${base}/Tripp-Thomas-Resume.pdf`} target="_blank" rel="noopener">Download résumé (PDF) →</a>
         </p>
       </div>
       <figure class="about-photo">
@@ -106,7 +123,11 @@ const projects = [
       </div>
       <div class="contact-row">
         <dt>LinkedIn</dt>
-        <dd><a href="https://www.linkedin.com/in/tripp-thomas-788238358/" target="_blank" rel="noopener">/in/tripp-thomas-788238358</a></dd>
+        <dd><a href="https://www.linkedin.com/in/trippthomas/" target="_blank" rel="noopener">/in/trippthomas</a></dd>
+      </div>
+      <div class="contact-row">
+        <dt>Résumé</dt>
+        <dd><a href={`${base}/Tripp-Thomas-Resume.pdf`} target="_blank" rel="noopener">Tripp-Thomas-Resume.pdf</a></dd>
       </div>
       <div class="contact-row">
         <dt>GitHub</dt>
@@ -158,6 +179,22 @@ const projects = [
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--s-2);
+  }
+
+  .about-avail {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  .resume-link {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--red-pencil);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 
   .contact-list {
